@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <article>
-        <h1>Listado de usuarios</h1>
-        <p>Queremos mostrar el listado de usarios que existen en nuestro sistema y que al hacer click sobre uno de ellos nos muestre la información del usuario.</p>
-        <p>Para obtener el listado de usuarios el backend nos ha proporcionado el siguiente endpoint <a href="https://jsonplaceholder.typicode.com/users" target="_blank">Users</a>.</p>
-    </article>
+    <div class="layout">
+        <header class="header">
+            <h1 class="header-title">Listado de usuarios</h1>
+            <p class="header-description">Queremos mostrar el listado de usuarios que existen en nuestro sistema y que
+                al hacer click sobre uno de ellos nos muestre la información del usuario. Para obtener el listado de
+                usuarios, el backend nos ha proporcionado el siguiente endpoint: <a
+                    href="https://jsonplaceholder.typicode.com/users" target="_blank">Users</a>.</p>
+        </header>
+
+        <div class="table-container text-dark">
+            <div class="table-header">
+                <div class="table-header-col">
+                    ID
+                </div>
+                <div class="table-header-col">
+                    Name
+                </div>
+                <div class="table-header-col">
+                    Username
+                </div>
+                <div class="table-header-col">
+                    Phone
+                </div>
+                <div class="table-header-col">
+                    Email
+                </div>
+            </div>
+            <div id="containerTable" class="data-container">
+
+            </div>
+        </div>
+    </div>
+    <script src="fetch.js"></script>
 </body>
+
 </html>
